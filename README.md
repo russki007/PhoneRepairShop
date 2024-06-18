@@ -57,7 +57,9 @@ To produce a customization package locally, do the following
   - Execute the tool `dotnet cake` or `dotnet cake --PackageVersion=<version>`
 - Option 2 - Using bootstrap script. See (Here)[https://cakebuild.net/docs/running-builds/runners/dotnet-tool#bootstrapping-for.net-tool] for more info.
   - Configure the path to the Acumatica site using the environment variable SITE_DIR. e.g. `SET SITE_DIR=<path-to-site>`
-  - From the root directory for this customizations run `.\build.ps1` or `.\build.ps` --PackageVersion=<version>`
+  - From the root directory for this customizations run `.\build.ps1` or `.\build.ps --PackageVersion=<version>`
+
+ After the build is successful, the customization package will be available in the `artifacts` directory.  Navigate to the Customization Projects (SM204505) screen and import the package.
 
 ### Running Unit Tests
 - Run unitest `dotnet cake --target=UnitTests` or `.\build.ps1 -Target UnitTests`
