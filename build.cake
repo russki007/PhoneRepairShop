@@ -78,9 +78,11 @@ Task("Package")
 {
 	EnsureDirectoryExists($"{BuildDir}/_project");
 	EnsureDirectoryExists($"{BuildDir}/Pages/RS");
+    EnsureDirectoryExists($"{BuildDir}/InputData");
 	EnsureDirectoryExists($"{BuildDir}/ReportsDefault");
 
 	CopyFiles($"{Paths.ExtentionsDir}/Pages/**/*.(aspx|cs)", $"{BuildDir}/Pages/RS");
+    CopyFiles($"{Paths.ExtentionsDir}/InputData/**/*.(csv)", $"{BuildDir}/InputData");
 	CopyFiles($"{Paths.ExtentionsDir}/Reports/**/*.rpx", $"{BuildDir}/ReportsDefault");
 	CopyFiles($"{Paths.ExtentionsDir}/**/*.xml",			$"{BuildDir}/_project");
 
