@@ -43,13 +43,6 @@ to get your project up and running.
 * .NET 8.0 SDK
 
 
-### Optimizations
-Set the following keys in the `<appSettings>` section of the web.config to reduce start times
-```
-<add key="InstantiateAllCaches" value="False" />
-<add key="DisableScheduleProcessor" value="True" />
-<add key="CompilePages" value="False" />
-```
 ### Build Customization Package using CLI
 To produce a customization package locally, do the following
 - Option 1 -  Using .NET Tool
@@ -71,6 +64,14 @@ To produce a customization package locally, do the following
 4. Cache extension names MUST end with the extended table, e.g MYxPMSetup (PMSetup is the original table)
 5. Graphs -> ProjectMaint.cs No need for a prefix; it is already in the namespace of the project. If you MUST use to letters of your nominated ISV code e.g [PE]ProjectMaint
 6. User-defined fields MUST have a designated prefix in the name, e.g `UsrMYxClaimNbrAttributeID`
+
+### Optimizations
+Set the following keys in the `<appSettings>` section of the web.config to reduce start times
+```
+<add key="InstantiateAllCaches" value="False" />
+<add key="DisableScheduleProcessor" value="True" />
+<add key="CompilePages" value="False" />
+```
 
 
 ### Examples
