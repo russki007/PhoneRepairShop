@@ -9,7 +9,7 @@ to get your project up and running.
 
 ## Getting Started
 - Clone this repo
-- Configure path to Acumatica Web Site by editing [OpenVS](OpenVS.bat) `ACC_SITE_PATH=<path-to-site>`
+- Configure path to Acumatica Web Site by editing [OpenVS](OpenVS.cmd) `ACC_SITE_PATH=<path-to-site>`
 - Ensure the path to the devenv.exe is correct. Update this like
 - Click on [OpenVS](OpenVS.bat) to open VS Solution
 - Build and Run
