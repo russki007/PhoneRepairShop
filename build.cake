@@ -6,6 +6,8 @@ var verbosity = Argument("Verbosity", Verbosity.Quiet);
 var outputPath = Argument<DirectoryPath>("outputPath", Context.Environment.WorkingDirectory.Combine("artifacts"));
 var siteDir = Directory(Argument("SitePath", "../../Site"));
 if (HasEnvironmentVariable("ACC_SITE_PATH")) siteDir = Directory(EnvironmentVariable("ACC_SITE_PATH"));
+
+
 var cpuCount = Argument<int?>("cpuCount", null);
 var version = Argument("PackageVersion", "1.0.0");
 
@@ -95,7 +97,7 @@ Task("Package")
              Arguments = new ProcessArgumentBuilder()
                 //.Append($"/wait")
 				.Append($"/description \"{packageDescription}\"")
-				.Append($"/website {siteDir}")
+				.Append($"/website \"{siteDir}\"")
 				.Append($"/in {BuildDir} /out {outputPath}/{PackageName}.{version}.zip")
 				.Append($"/include \"{BuildDir}/bin/PhoneRepairShop.dll\" \"bin\\PhoneRepairShop.dll\""),
              RedirectStandardOutput = true
