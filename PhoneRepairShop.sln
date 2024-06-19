@@ -12,25 +12,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		database\Schema.sql = database\Schema.sql
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Apps", "..\..\temp\AcumaticaERPInstall_24.191.0155P\PhoneRepairShop\", "{578BD185-1127-42F7-989E-8F967B549C0F}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Apps", "%ACC_SITE_PATH%", "{578BD185-1127-42F7-989E-8F967B549C0F}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_1550"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\temp\AcumaticaERPInstall_24.191.0155P\PhoneRepairShop\"
+		Debug.AspNetCompiler.PhysicalPath = "%ACC_SITE_PATH%"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1550\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_1550"
-		Release.AspNetCompiler.PhysicalPath = "..\..\temp\AcumaticaERPInstall_24.191.0155P\PhoneRepairShop\"
+		Release.AspNetCompiler.PhysicalPath = ".%ACC_SITE_PATH%"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1550\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "1550"
-		SlnRelativePath = "..\..\temp\AcumaticaERPInstall_24.191.0155P\PhoneRepairShop\"
+		SlnRelativePath = "%ACC_SITE_PATH%"
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneRepairShop", "src\PhoneRepairShop\PhoneRepairShop.csproj", "{6D4F6869-FC44-4499-9970-F07D0E67D536}"
