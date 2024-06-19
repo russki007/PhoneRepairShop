@@ -1,7 +1,7 @@
 # PhoneRepairShop Customization Project
 
 ## Overview
-This project was bootstrapped from the [acuamtica project generator](https://github.com/russki007/acumatica-project-generator) template repository, It offers a customization package scaffold for the Acumatica xRP Framework. Using this scaffold, you can create a standard customization project complete with common framework dependencies, build scripts, folder layout assets and some samples
+This project was bootstrapped from the [acuamtica project generator](https://github.com/russki007/acumatica-project-generator) template repository. It offers a customization package scaffold for the Acumatica xRP Framework. Using this scaffold, you can create a standard customization project complete with common framework dependencies, build scripts, folder layout assets and some samples
 to get your project up and running.
 
 - [T240 Training Guide](https://training.acumatica.com/University/T240/)
